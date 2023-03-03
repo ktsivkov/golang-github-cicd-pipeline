@@ -39,6 +39,7 @@ jobs:
         run: |
           docker run -e COVERAGE_THRESHOLD=$COVERAGE_THRESHOLD $DOCKER_IMAGE_REPOSITORY/$DOCKER_RUNNER_IMAGE
   build:
+    needs: test
     runs-on: ubuntu-latest
     name: "Build"
     steps:
