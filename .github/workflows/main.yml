@@ -15,7 +15,7 @@ jobs:
       -
         name: "Run tests"
         env:
-          COVERAGE_THRESHOLD: $COVERAGE_THRESHOLD
+          COVERAGE_THRESHOLD: ${{ vars.COVERAGE_THRESHOLD }}
         run: |
           echo $COVERAGE_THRESHOLD
           docker build . --file=docker/testing.Dockerfile -t test:latest
