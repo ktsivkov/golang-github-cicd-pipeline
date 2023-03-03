@@ -1,4 +1,4 @@
-name: "Build & Deploy"
+name: "Test, Build & Deploy"
 run-name: "${{ github.actor }} runs a pipeline."
 on: [push]
 
