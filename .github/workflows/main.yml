@@ -13,10 +13,13 @@ jobs:
         name: "Checkout"
         uses: actions/checkout@v3
       -
-        name: "[Application] Build and push"
+        name: "Run tests"
+        env:
+          COVERAGE_THRESHOLD: $COVERAGE_THRESHOLD
         run: |
+          echo $COVERAGE_THRESHOLD
           docker build . --file=docker/testing.Dockerfile -t test:latest
-          docker run -e COVERAGE_THRESHOLD=90 test:latest
+          docker run -e COVERAGE_THRESHOLD=$COVERAGE_THRESHOLD test:latest
 #  build:
 #    runs-on: self-hosted
 #    name: "Build"
