@@ -1,5 +1,7 @@
 # Example Golang Project with a CI/CD  Pipeline
 
+![Test, Build & Deploy](https://github.com/ktsivkov/golang-github-cicd-pipeline/actions/workflows/main.yml/badge.svg)
+
 ## Intro
 This is an example project that targets to show how you can implement a CI/CD pipeline in your Go projects.
 
