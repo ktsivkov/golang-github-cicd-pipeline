@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang-github-cicd-pipeline/internal/handler"
+	"github.com/ktsivkov/golang-github-cicd-pipeline/internal/handler"
 	"net/http"
 	"os"
 )
