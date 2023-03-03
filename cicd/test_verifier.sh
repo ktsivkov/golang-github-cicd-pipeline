@@ -5,8 +5,8 @@ untested_files=()
 
 # Read the .coverignore file for this directory into an array
 ignore_list=()
-if [[ -f "$ignorefile" ]]; then
-  mapfile -t ignore_list < "$ignorefile"
+if [ -f $ignore_file ]; then
+  mapfile -t ignore_list < $ignore_file
 fi
 
 count_slashes() {
