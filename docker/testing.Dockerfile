@@ -1,4 +1,6 @@
-FROM golang:1.20.1-bullseye
+FROM golang:1.20.1-alpine
+
+RUN apk add bash
 
 RUN export GOPATH=$HOME/go
 RUN export PATH=$PATH:$GOPATH/bin
